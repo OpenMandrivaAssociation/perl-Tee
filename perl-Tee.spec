@@ -17,6 +17,7 @@ BuildRequires: perl(Getopt::Long)
 BuildRequires: perl(IPC::Run3)
 BuildRequires: perl(Probe::Perl)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(IO::CaptureOutput)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
