@@ -1,15 +1,13 @@
 %define upstream_name    Tee
-%define upstream_version 0.14
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.14
+Release:	7
 
 Summary:	Pure Perl emulation of GNU tee
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://github.com/dagolden/tee/tree
-Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Tee-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Tee-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,7 +35,7 @@ The 'Tee' module provides a convenience function that may be used in place
 of 'system()' to redirect commands through 'ptee'.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
